@@ -7,16 +7,17 @@ with open("README.rst") as f:
 
 setup(
     name="sphinxcontrib-platformpicker",
-    version="1.0",
+    version="1.1",
     author="whitequark",
     author_email="whitequark@whitequark.org",
     license="MIT",
     description="Platform picker extension for Sphinx",
     long_description=long_desc,
+    install_requires=["Sphinx>=2.0"],
     zip_safe=False,
     packages=find_packages(),
     namespace_packages=["sphinxcontrib"],
-    install_requires=["Sphinx>=2.0"],
+    package_data={"sphinxcontrib": ["*.css", "*.js"]},
     project_urls={
         "Documentation": "https://sphinxcontrib-platformpicker.readthedocs.io/",
         "Source Code": "https://github.com/whitequark/sphinxcontrib-platformpicker",
