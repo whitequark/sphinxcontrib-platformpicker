@@ -7,7 +7,7 @@ with open("README.rst") as f:
 
 setup(
     name="sphinxcontrib-platformpicker",
-    version="1.3",
+    version="1.4",
     author="whitequark",
     author_email="whitequark@whitequark.org",
     license="MIT",
